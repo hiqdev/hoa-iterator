@@ -90,7 +90,7 @@ class Lookahead extends IteratorIterator implements Outer
     /**
      * Return the current element.
      */
-    public function current()
+    public function current(): mixed
     {
         return $this->_current;
     }
@@ -149,7 +149,7 @@ class Lookahead extends IteratorIterator implements Outer
     /**
      * Get next value.
      */
-    public function getNext()
+    public function getNext(): mixed
     {
         return $this->getInnerIterator()->current();
     }
@@ -157,7 +157,7 @@ class Lookahead extends IteratorIterator implements Outer
     /**
      * Get next key.
      */
-    public function getNextKey()
+    public function getNextKey(): mixed
     {
         return $this->getInnerIterator()->key();
     }
